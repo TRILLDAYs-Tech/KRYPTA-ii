@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krypta X</title>
+
+    <!-- Styles Link-->
+    <link rel="stylesheet" href="fashioN.css">
+
+    <!-- JavaScript Link -->
+    <script src="aPP.js"></script>
+</head>
+ 
+<body>
+    <div class="main-container">
+
+    
+        <div class="headeR">
+            <h1 id="appTitle">Kryption kEY</h1>
+
+            <label for="switchKey">
+                <input type="checkbox" id="switchKey"> 
+                    <span id="switchText">Use custom enKryption key</span>
+            </label>
+
+            <label for="kryptKey">
+                <input type="password" id="key">
+                <br><br>
+            </label>
+
+            <button id="setNewKrypt" disabled>Set New Krypt Key</button>
+ 
+            <br><br>
+
+            <textarea id="keyHolder" readonly></textarea>
+
+            <br><br>
+
+            <button id="resetKrypt" disabled>Reset Krypt Key</button>
+
+            <!-- <br><br> -->
+
+            <div id="genLine">
+                <hr width="100%" size="4" noshade>
+            </div>
+            
+            <div id="trueGen" class="genBlock">
+                
+                <h3 id="genID">Generate Enkryption Key</h3>
+                
+                <textarea id="genKeyHolder" readonly width="100%"></textarea>
+                
+                <div id="radioGen">
+                    <input type="radio" name="genLength" value="16b">
+                    <label for="16bit">16 bit</label>
+
+                    <input type="radio" name="genLength" value="24b">
+                    <label for="24bit">24 bit</label>
+
+                    <input type="radio" name="genLength" value="32b">
+                    <label for="32bit">32 bit</label>
+                    
+                </div>
+                
+                <br>
+                <button id="genKryptKey">Generate Krypt Key</button>
+                <button id="useKey" disabled>Use this key</button>
+                <button id="copyGenKey" disabled>Copy key</button>
+
+                <button id="rstGenKey" disabled>Reset Key</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="container">
+            <div class="cBlocks">
+                <h1 id="appTitle">KRYPTA X</h1>
+
+                <label for="encryptMessage">
+                    <strong>Message to Encrypt</strong>
+                </label>
+                <textarea id="encryptMessage" rows="15"></textarea>
+                <button id="encryptButton">Encrypt</button>
+            </div>
+
+            <div class="cBlocks">
+                <label for="encryptedMessage">
+                    <strong>Encrypted Message</strong>
+                </label>
+                <textarea id="encryptedMessage" readonly rows="15"></textarea>
+                <button id="copyEncButton" class="copyButton">Copy Encrypted Message</button>
+                <button id="clearEncrypt">Clear</button>
+            </div>
+
+            <div class="cBlocks">
+                <label for="decryptMessage">
+                    <strong>Message to Decrypt</strong>
+                </label>
+                <textarea id="decryptMessage" rows="15"></textarea>
+                <button id="decryptButton">Decrypt</button>
+            </div>
+
+            <div class="cBlocks">
+                <label for="decryptedMessage">
+                    <strong>Decrypted Message</strong>
+                </label>
+                <textarea id="decryptedMessage" readonly rows="15"></textarea>
+                <button id="copyDecButton" class="copyButton">Copy Decrypted Message</button>
+                <button id="clearDecrypt">Clear</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="techLogo">
+        <img src="assets/Powered by TRillDAYs Tech Logo.svg" alt="" class="tLogo">
+    </div>
+
+    <div class="copyright">
+        <span>
+            <em>&copy 2025 TRILLDAYs Tech. All Rights Reserved.</em>
+        </span>
+    </div>
+    
+    <!-- somewhow the following link has to be here otherwise the encryption doesn't happen. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    
+</body>
+</html>
