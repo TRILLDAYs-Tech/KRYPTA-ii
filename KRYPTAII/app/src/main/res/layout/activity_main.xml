@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/clearDecrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#F46800"
+        android:text="CLEAR"
+        android:textColor="#331D0D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/decryptButton"
+        app:layout_constraintTop_toBottomOf="@+id/decryptMessage" />
+
+    <Button
+        android:id="@+id/copyKryptMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#797989"
+        android:text="Copy"
+        app:layout_constraintEnd_toStartOf="@+id/clearCrypt"
+        app:layout_constraintTop_toBottomOf="@+id/encryptedMessage" />
+
+    <Button
+        android:id="@+id/decryptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#090889"
+        android:text="DEKRYPT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/decryptMessage" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#090889"
+        android:text="SaVE"
+        app:layout_constraintEnd_toStartOf="@+id/copyKryptMessage"
+        app:layout_constraintTop_toBottomOf="@+id/encryptedMessage" />
+
+    <Button
+        android:id="@+id/clearCrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#F46800"
+        android:text="CLEAR"
+        android:textColor="#331D0D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/encryptedMessage" />
+
+    <TextView
+        android:id="@+id/encryptedMessage"
+        android:layout_width="326dp"
+        android:layout_height="168dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#090889"
+        android:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/encryptButton" />
+
+
+    <EditText
+        android:id="@+id/encryptMessage"
+        android:layout_width="327dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Message to encrypt:"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:minLines="10"
+        android:singleLine="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newKey" />
+
+    <EditText
+        android:id="@+id/decryptMessage"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Message to deKrypt:"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:minLines="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copyKryptMessage" />
+
+    <Button
+        android:id="@+id/clearEncrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#F46800"
+        android:text="CLEAR"
+        android:textColor="#331D0D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/encryptButton"
+        app:layout_constraintTop_toBottomOf="@+id/encryptMessage" />
+
+    <Button
+        android:id="@+id/encryptButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#090889"
+        android:text="ENKRYPT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/encryptMessage" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="330dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/powered_by_trilldays_tech_logo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/krypta_ii_logo" />
+
+    <EditText
+        android:id="@+id/newKey"
+        android:layout_width="181dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="enKryption Key"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kryptSwitch" />
+
+    <Button
+        android:id="@+id/newKeyButton"
+        android:layout_width="126dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#376317"
+        android:text="Set Key"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/newKey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/newKey" />
+
+    <Switch
+        android:id="@+id/kryptSwitch"
+        android:layout_width="46dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textSwitch"
+        android:layout_width="219dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/kryptSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
